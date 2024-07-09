@@ -1,0 +1,13 @@
+create a next-js app:
+npx create-nextjs-app@latest practice
+
+start the server: npm run dev
+
+
+github:
+git init
+git add .
+git commit -m "first commit"
+git remote add practice-origin-nextjs git@github.com:JyothikSandeep/next-js.git
+git push  
+git push -u practice-origin-nextjs
