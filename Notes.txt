@@ -11,3 +11,55 @@ git commit -m "first commit"
 git remote add practice-origin-nextjs git@github.com:JyothikSandeep/next-js.git
 git push  
 git push -u practice-origin-nextjs
+
+
+
+File system based routing:
+Next Js uses files and folders based system to define routes.
+
+
+Everything starts with app
+inside it we can observe two folders
+1.Layout.js
+2.page.js
+
+
+Nextjs works with react server components
+
+react server componets ----> render only on server never on client.
+
+we can see everthing in our console instead of developer tools
+
+In react we use react-router-dom to add any routes but in Next js we will create a folder in app
+It indicates that we are creating a new router
+
+for suppose we created a page like a folder like about in app
+inside about we have to add a page.js file inorder to redirect to that page 
+
+
+Redirecting from one page to another:
+If we are using react the we are using Navigate or Link form react router dom inorder solve the issue of rerendering
+
+So In next js we also have Link but we have to import it form next js only
+
+syntax:
+import Link from "nextjs/Link"
+
+inside jsx:
+<Link href="/about">about</Link>
+
+In react we use "to" instead of "href"
+
+
+Layout:
+Layout is just a wapper which is main file where every nextjs app atleast have one layout for sure.
+
+Favicon top website logo:
+If we use a image name as icon.png then by default its the favicon.
+
+Custom components:
+We can use custom components as we are using it in React.
+
+@ in next js we are using ../components/something in react where nextjs simplyfies it by using @symbol
+
+any file outside the app will be named as @/components/filename then it will get redirected.
